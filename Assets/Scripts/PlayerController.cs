@@ -95,8 +95,8 @@ public class PlayerController : MonoBehaviour {
     {
         if (c.gameObject.tag == "Bat")
         {
-            anim.SetBool("Death", true);
-            //StartCoroutine("Death");
+            //anim.SetBool("Death", true);
+            StartCoroutine("Death");
             GameManager.GameOver();
         }
     }
@@ -110,10 +110,12 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(1);
     }
 
-    //IEnumerator Death()
-    //{
-    //    anim.SetBool("Death", true);
-    //    yield return new WaitForSeconds(1);
-    //    anim.SetBool("Death", false);
-    //}
+    IEnumerator Death()
+    {
+        anim.SetBool("Death", true);
+        yield return new WaitForSeconds(1);
+        anim.SetBool("Death", false);
+        gameObject.SetActive(false);
+        GameManager.GameOver();
+    }
 }
