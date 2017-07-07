@@ -37,4 +37,21 @@ public class BatController : MonoBehaviour
             yield return new WaitForSeconds(2);
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D c)
+    {
+        if (c.gameObject.tag == "Player")
+        {
+            StopCoroutine("EnemyMovement");
+            StartCoroutine("Death");
+        }
+    }
+
+    IEnumerator Death()
+    {
+        anim.SetBool("Death", true);
+        yield return new WaitForSeconds(1);
+        anim.SetBool("Death", false);
+        gameObject.SetActive(false);
+    }
 }

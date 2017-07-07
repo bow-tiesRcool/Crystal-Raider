@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 655752b0b00538041830b451a818ff25
+timeCreated: 1498793750
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Psychopod
+  fontNames:
+  - Psychopod
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
