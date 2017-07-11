@@ -457,6 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: Platformer
+  screen: {fileID: 8300000, guid: c2a9e7bded7403141aabdc72ae7c7eea, type: 3}
 --- !u!114 &648223998
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public string Player = "Player";
     public int score = 0;
     public int highScore;
-    public int lives = 3;
+    public int lives = 1;
 
     private void Awake()
     {
@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
         livesUI.text = "Lives: " + lives;
         scoreUI.text = "Score: " + score;
         instance.highScoreUI.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
+        AudioManager.CrossFadeMusic(AudioManager.instance.music, 1);
     }
 
     private void Update()

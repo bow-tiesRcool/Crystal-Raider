@@ -8,11 +8,12 @@ public class PlayerController : MonoBehaviour {
 
     public float speed = 5;
     public float jumpForce = 1;
-    public int maxJumpCount = 1;
+    public int maxJumpCount = 2;
     public int jumpCount = 1;
     bool onGround = true;
     private Rigidbody2D body;
     private Animator anim;
+    bool walksound = false;
 
     private void Awake()
     {
@@ -38,12 +39,22 @@ public class PlayerController : MonoBehaviour {
         body.velocity = new Vector2((move * speed), body.velocity.y);
         if (move > 0)
         {
-            StartCoroutine("Walk");
+            anim.SetBool("Walk", true);
+            anim.SetFloat("Speed", 1);
+            if (walksound == false && onGround == true)
+            {
+                StartCoroutine("Walk");
+            }
             transform.right = Vector3.right;
         }
         else if (move < 0)
         {
-            StartCoroutine("Walk");
+            anim.SetBool("Walk", true);
+            anim.SetFloat("Speed", 1);
+            if (walksound == false && onGround == true)
+            {
+                StartCoroutine("Walk");
+            }
             transform.right = Vector3.left;
         }
         else
@@ -51,44 +62,38 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("Walk", false);
             anim.SetFloat("Speed", 0);
         }
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") && instance.jumpCount <= instance.maxJumpCount)
         {
-            StartCoroutine("JumpRoutine");
+            --jumpCount;
+            JumpRoutine();
         }
-	}
 
-    IEnumerator JumpRoutine()
+        if (onGround == true)
+        {
+            Ground();
+        }
+
+        Debug.Log(onGround);
+    }
+
+    public static void JumpRoutine()
     {
-        if (instance.onGround == true)
+        if (instance.jumpCount <= instance.maxJumpCount && instance.jumpCount >= 0)
         {
             instance.anim.SetBool("Jump", true);
-            Debug.Log("Play Jump Sound");
             AudioManager.PlayEffect("Jump", 1, 1);
-            Debug.Log("JumpSoundOver");
             instance.body.AddForce(Vector2.up * instance.jumpForce, ForceMode2D.Impulse);
-
-            --instance.jumpCount;
-
-            if (instance.jumpCount == 0)
-            {
-                instance.onGround = false;
-            }
-
-            if (instance.body.velocity.y >= 0 && instance.onGround == false)
-            {
-                instance.anim.SetBool("Jump", false);
-                yield return StartCoroutine("Ground");
-            }
+            instance.onGround = false;
         }
     }
 
-    IEnumerator Ground()
+    public static void Ground()
     {
-        AudioManager.PlayEffect("JumpLand", 1, 1);
-        yield return new WaitForSeconds(2);
-        instance.onGround = true;
-        instance.jumpCount = instance.maxJumpCount;
-        yield return new WaitForEndOfFrame();
+        if (instance.onGround == true)
+        {
+            instance.anim.SetBool("Jump", false);
+            instance.jumpCount = instance.maxJumpCount;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D c)
@@ -99,15 +104,19 @@ public class PlayerController : MonoBehaviour {
             StartCoroutine("Death");
             GameManager.GameOver();
         }
+        if(c.gameObject.tag == "Ground")
+        {
+            AudioManager.PlayEffect("JumpLand", 1, 1);
+            onGround = true;
+        }
     }
 
     IEnumerator Walk()
     {
-        anim.SetBool("Walk", true);
-        anim.SetFloat("Speed", 1);
-        yield return new WaitForEndOfFrame();
+        walksound = true;
         AudioManager.PlayEffect("Walk", 1, 1);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.5f);
+        walksound = false;
     }
 
     IEnumerator Death()
