@@ -9,13 +9,15 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public AudioClip gameOver;
     public Text gameOverUI;
-    public Text scoreUI;
-    public Text highScoreUI;
+    public Text CrystalsLeft;
     public Text livesUI;
     public string Player = "Player";
-    public int score = 0;
-    public int highScore;
     public int lives = 1;
+    public int crystals;
+    //public int score = 0;
+    //public int highScore;
+    //public Text scoreUI;
+    //public Text highScoreUI;
 
     private void Awake()
     {
@@ -33,15 +35,16 @@ public class GameManager : MonoBehaviour
     {
         Cursor.visible = false;
         livesUI.text = "Lives: " + lives;
-        scoreUI.text = "Score: " + score;
-        instance.highScoreUI.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
+        CrystalsLeft.text = "Crystals Left: " + crystals;
+        //scoreUI.text = "Score: " + score;
+        //instance.highScoreUI.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
         AudioManager.CrossFadeMusic(AudioManager.instance.music, 1);
     }
 
-    private void Update()
-    {
-        HighScore();
-    }
+    //private void Update()
+    //{
+    //    HighScore();
+    //}
 
     public static void GameOver()
     {
@@ -49,45 +52,45 @@ public class GameManager : MonoBehaviour
         instance.gameOverUI.text = "Game Over";
         instance.gameOverUI.gameObject.SetActive(true);
         AudioManager.CrossFadeMusic(instance.gameOver, 1);
-        HighScoreSaver();
+        //HighScoreSaver();
     }
 
-    public static void Points(int points)
-    {
-        int score = points;
-        instance.score += score;
-        instance.scoreUI.text = "Score: " + instance.score;
-    }
+    //public static void Points(int points)
+    //{
+    //    int score = points;
+    //    instance.score += score;
+    //    instance.scoreUI.text = "Score: " + instance.score;
+    //}
 
-    public static void HighScore()
-    {
-        if (instance.score > instance.highScore)
-        {
-            instance.highScore = instance.score;
-        }
-        if (instance.highScore > PlayerPrefs.GetInt("highScore"))
-        {
-            instance.highScoreUI.text = "highScore: " + instance.highScore;
-        }
-    }
-    public static void HighScoreSaver()
-    {
-        if (PlayerPrefs.HasKey("highScore") == true)
-        {
-            if (instance.highScore > PlayerPrefs.GetInt("highScore"))
-            {
-                int newHighScore = instance.highScore;
-                PlayerPrefs.SetInt("highScore", newHighScore);
-                PlayerPrefs.Save();
-            }
-        }
-        else
-        {
-            int newHighScore = instance.highScore;
-            PlayerPrefs.SetInt("highScore", newHighScore);
-            PlayerPrefs.Save();
-        }
-    }
+    //public static void HighScore()
+    //{
+    //    if (instance.score > instance.highScore)
+    //    {
+    //        instance.highScore = instance.score;
+    //    }
+    //    if (instance.highScore > PlayerPrefs.GetInt("highScore"))
+    //    {
+    //        instance.highScoreUI.text = "highScore: " + instance.highScore;
+    //    }
+    //}
+    //public static void HighScoreSaver()
+    //{
+    //    if (PlayerPrefs.HasKey("highScore") == true)
+    //    {
+    //        if (instance.highScore > PlayerPrefs.GetInt("highScore"))
+    //        {
+    //            int newHighScore = instance.highScore;
+    //            PlayerPrefs.SetInt("highScore", newHighScore);
+    //            PlayerPrefs.Save();
+    //        }
+    //    }
+    //    else
+    //    {
+    //        int newHighScore = instance.highScore;
+    //        PlayerPrefs.SetInt("highScore", newHighScore);
+    //        PlayerPrefs.Save();
+    //    }
+    //}
 
     public static void LifeLost()
     {

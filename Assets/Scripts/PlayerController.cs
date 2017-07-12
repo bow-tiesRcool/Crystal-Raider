@@ -124,7 +124,6 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("Death", true);
         yield return new WaitForSeconds(1);
         anim.SetBool("Death", false);
-        gameObject.SetActive(false);
         GameManager.GameOver();
     }
 }
