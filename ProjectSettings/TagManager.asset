@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bat
   - Ground
+  - Sign
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Cave
   - 
   - 
   - 
@@ -45,4 +46,7 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 1438734519
+    locked: 0
+  - name: Crystals
+    uniqueID: 661944197
     locked: 0

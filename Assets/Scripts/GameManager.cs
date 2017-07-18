@@ -11,9 +11,12 @@ public class GameManager : MonoBehaviour
     public Text gameOverUI;
     public Text CrystalsLeft;
     public Text livesUI;
+    public Text CaveComplete;
+    public Text EnterCave;
     public string Player = "Player";
     public int lives = 1;
     public int crystals;
+    public GameObject CaveDoor;
     //public int score = 0;
     //public int highScore;
     //public Text scoreUI;
@@ -31,13 +34,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Start()
+    IEnumerator Start()
     {
         Cursor.visible = false;
         livesUI.text = "Lives: " + lives;
         CrystalsLeft.text = "Crystals Left: " + crystals;
         //scoreUI.text = "Score: " + score;
         //instance.highScoreUI.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
+        yield return new WaitForEndOfFrame();
         AudioManager.CrossFadeMusic(AudioManager.instance.music, 1);
     }
 
@@ -53,6 +57,18 @@ public class GameManager : MonoBehaviour
         instance.gameOverUI.gameObject.SetActive(true);
         AudioManager.CrossFadeMusic(instance.gameOver, 1);
         //HighScoreSaver();
+    }
+
+    public static void CrystalCollected()
+    {
+        instance.crystals--;
+        instance.CrystalsLeft.text = "Crystals Left: " + instance.crystals;
+        if (instance.crystals == 0)
+        {
+            instance.CaveComplete.text = "Cave Complete!";
+            instance.CaveComplete.gameObject.SetActive(true);
+            instance.CaveDoor.SetActive(true);
+        }
     }
 
     //public static void Points(int points)

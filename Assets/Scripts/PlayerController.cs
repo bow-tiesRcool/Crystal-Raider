@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D body;
     private Animator anim;
     bool walksound = false;
+    public bool nearSign = false;
 
     private void Awake()
     {
@@ -73,7 +74,16 @@ public class PlayerController : MonoBehaviour {
             Ground();
         }
 
-        Debug.Log(onGround);
+        if (Input.GetButtonDown("Fire1"))
+        {
+            anim.SetTrigger("Shoot" );
+        }
+
+        if (Input.GetKeyDown(KeyCode.R) && nearSign == true)
+        {
+            Debug.Log("R was pressed");
+            TextController.instance.Write();
+        }
     }
 
     public static void JumpRoutine()
@@ -125,5 +135,35 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(1);
         anim.SetBool("Death", false);
         GameManager.GameOver();
+    }
+
+    private void OnTriggerEnter2D(Collider2D c)
+    {
+        if (c.gameObject.tag == "Sign")
+        {
+            nearSign = true;
+            TextController.instance.pressR.SetActive(true);
+            TextController.instance.textStuff = SignController.instance.textToDisplay;
+        }
+
+        if (c.gameObject.tag == "Door")
+        {
+            GameManager.instance.EnterCave.text = "Enter Cave";
+            GameManager.instance.EnterCave.gameObject.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D c)
+    {
+        if (c.gameObject.tag == "Sign")
+        {
+            nearSign = false;
+            TextController.instance.pressR.SetActive(false);
+        }
+
+        if (c.gameObject.tag == "Door")
+        {
+            GameManager.instance.EnterCave.gameObject.SetActive(false);
+        }
     }
 }
