@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 61461639568752588}
   - component: {fileID: 50953048133227216}
   - component: {fileID: 212105187819140862}
+  - component: {fileID: 122158056222016808}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -106,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0014286041, y: 0.014503002}
+  m_Offset: {x: -0.027177095, y: 0.0176692}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -117,7 +118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55723953, y: 0.6167841}
+  m_Size: {x: 0.21397161, y: 0.6104517}
   m_EdgeRadius: 0
 --- !u!95 &95704411843481236
 Animator:
@@ -151,6 +152,18 @@ MonoBehaviour:
   jumpForce: 5
   maxJumpCount: 2
   jumpCount: 2
+  nearSign: 0
+--- !u!122 &122158056222016808
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1450211870274828}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4282400832
+  m_Size: 1
 --- !u!212 &212105187819140862
 SpriteRenderer:
   m_ObjectHideFlags: 1

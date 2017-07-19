@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-
+            instance.gameOverUI.gameObject.SetActive(false);
         }
     }
 

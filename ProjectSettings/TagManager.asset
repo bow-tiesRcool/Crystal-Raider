@@ -7,6 +7,10 @@ TagManager:
   - Bat
   - Ground
   - Sign
+  - Door
+  - Exit
+  - RedCrystal
+  - BlueCrystal
   layers:
   - Default
   - TransparentFX

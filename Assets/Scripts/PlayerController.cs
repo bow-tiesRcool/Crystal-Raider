@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
     private Animator anim;
     bool walksound = false;
     public bool nearSign = false;
+    Vector2 teleport;
 
     private void Awake()
     {
@@ -143,13 +144,24 @@ public class PlayerController : MonoBehaviour {
         {
             nearSign = true;
             TextController.instance.pressR.SetActive(true);
-            TextController.instance.textStuff = SignController.instance.textToDisplay;
+            TextController.instance.textStuff = c.gameObject.GetComponent<SignController>().textToDisplay;
+        }
+
+        if (c.gameObject.tag == "Exit")
+        {
+            GameManager.instance.EnterCave.text = "Exit Cave";
+            GameManager.instance.EnterCave.gameObject.SetActive(true);
         }
 
         if (c.gameObject.tag == "Door")
         {
-            GameManager.instance.EnterCave.text = "Enter Cave";
-            GameManager.instance.EnterCave.gameObject.SetActive(true);
+            teleport = c.gameObject.GetComponent<DoorController>().location;
+            transform.position = teleport;
+        }
+
+        if (c.gameObject.tag == "RedCrystal")
+        {
+            StartCoroutine("Death");
         }
     }
 
@@ -161,7 +173,7 @@ public class PlayerController : MonoBehaviour {
             TextController.instance.pressR.SetActive(false);
         }
 
-        if (c.gameObject.tag == "Door")
+        if (c.gameObject.tag == "Exit")
         {
             GameManager.instance.EnterCave.gameObject.SetActive(false);
         }
