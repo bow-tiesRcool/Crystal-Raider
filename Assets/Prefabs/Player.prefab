@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4633021511785128}
   - component: {fileID: 212782654013779918}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 50953048133227216}
   - component: {fileID: 212105187819140862}
   - component: {fileID: 122158056222016808}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -152,6 +152,7 @@ MonoBehaviour:
   jumpForce: 5
   maxJumpCount: 2
   jumpCount: 2
+  move: 0
   nearSign: 0
 --- !u!122 &122158056222016808
 Halo:
@@ -193,8 +194,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1438734519
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -233,8 +234,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1438734519
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d82e78783be75c848bed613bd1e0bbd6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

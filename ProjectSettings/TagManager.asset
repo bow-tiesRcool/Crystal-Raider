@@ -11,6 +11,8 @@ TagManager:
   - Exit
   - RedCrystal
   - BlueCrystal
+  - Bullet
+  - Spider
   layers:
   - Default
   - TransparentFX
@@ -21,9 +23,9 @@ TagManager:
   - 
   - 
   - Cave
-  - 
-  - 
-  - 
+  - Door
+  - Player
+  - Bullet
   - 
   - 
   - 

@@ -1,0 +1,528 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
+    Vendor:   NVIDIA
+    VRAM:     4050 MB
+    Driver:   22.21.13.8205
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.019 seconds
+Platform assembly: C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Evan Kiser\Projects\Platformer\PlatformerProjectPart4_ekiser_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+The referenced script on this Behaviour (Game Object 'Exit') is missing!
+ 
+(Filename:  Line: 1743)
+
+UnloadTime: 4.482459 ms
+Play
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 39f0 -> priority: 1 
+  Thread -> id: 3934 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.501126 ms
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 761.
+Total: 1.661127 ms (FindLiveObjects: 0.063999 ms CreateObjectMapping: 0.014769 ms MarkObjects: 0.640820 ms  DeleteObjects: 0.940717 ms)
+
+R was pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+gameOverUI
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour (Game Object 'Exit') is missing!
+ 
+(Filename:  Line: 1743)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.685948 ms
+Play
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 313.
+Total: 0.407794 ms (FindLiveObjects: 0.078769 ms CreateObjectMapping: 0.020102 ms MarkObjects: 0.164102 ms  DeleteObjects: 0.143179 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.422153 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 786.
+Total: 2.081229 ms (FindLiveObjects: 0.066051 ms CreateObjectMapping: 0.028717 ms MarkObjects: 0.905025 ms  DeleteObjects: 1.080614 ms)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+gameOverUI
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+The referenced script on this Behaviour (Game Object 'Exit') is missing!
+ 
+(Filename:  Line: 1743)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.619076 ms
+Play
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 313.
+Total: 0.318769 ms (FindLiveObjects: 0.022564 ms CreateObjectMapping: 0.011487 ms MarkObjects: 0.171487 ms  DeleteObjects: 0.112820 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.335999 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 786.
+Total: 1.603281 ms (FindLiveObjects: 0.059487 ms CreateObjectMapping: 0.015999 ms MarkObjects: 0.583384 ms  DeleteObjects: 0.942768 ms)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+gameOverUI
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'Exit') is missing!
+ 
+(Filename:  Line: 1743)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.583384 ms
+Play
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 313.
+Total: 0.326153 ms (FindLiveObjects: 0.048410 ms CreateObjectMapping: 0.009846 ms MarkObjects: 0.153025 ms  DeleteObjects: 0.114461 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.357333 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 786.
+Total: 1.999588 ms (FindLiveObjects: 0.056615 ms CreateObjectMapping: 0.023794 ms MarkObjects: 0.772102 ms  DeleteObjects: 1.145435 ms)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+gameOverUI
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'Exit') is missing!
+ 
+(Filename:  Line: 1743)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.681435 ms
+Play
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 313.
+Total: 0.319179 ms (FindLiveObjects: 0.036512 ms CreateObjectMapping: 0.011076 ms MarkObjects: 0.172307 ms  DeleteObjects: 0.098051 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.424204 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 786.
+Total: 2.164511 ms (FindLiveObjects: 0.044307 ms CreateObjectMapping: 0.018871 ms MarkObjects: 0.635897 ms  DeleteObjects: 1.465025 ms)
+
+R was pressed
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerExit2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+UnityEngine.GameObject:SetActive(Boolean)
+CrystalController:OnTriggerEnter2D(Collider2D)
+ 
+(Filename:  Line: -1)
+
+UnityException: GameObject has undefined tag!
+  at (wrapper managed-to-native) UnityEngine.GameObject:get_tag ()
+  at PlayerController.OnTriggerEnter2D (UnityEngine.Collider2D c) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+gameOverUI
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+you lost
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'Exit') is missing!
+ 
+(Filename:  Line: 1743)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.593640 ms
+Play
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 313.
+Total: 0.409025 ms (FindLiveObjects: 0.082871 ms CreateObjectMapping: 0.011897 ms MarkObjects: 0.178871 ms  DeleteObjects: 0.134564 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.301948 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 786.
+Total: 1.492922 ms (FindLiveObjects: 0.043487 ms CreateObjectMapping: 0.018871 ms MarkObjects: 0.575179 ms  DeleteObjects: 0.854563 ms)
+

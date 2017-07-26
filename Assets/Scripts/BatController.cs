@@ -54,4 +54,14 @@ public class BatController : MonoBehaviour
         anim.SetBool("Death", false);
         gameObject.SetActive(false);
     }
+
+    private void OnTriggerEnter2D(Collider2D c)
+    {
+        if (c.gameObject.tag == "Bullet")
+        {
+            StopCoroutine("EnemyMovement");
+            StartCoroutine("Death");
+            c.gameObject.SetActive(false);
+        }
+    }
 }

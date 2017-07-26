@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
     public float jumpForce = 1;
     public int maxJumpCount = 2;
     public int jumpCount = 1;
+    public float move;
     bool onGround = true;
     private Rigidbody2D body;
     private Animator anim;
@@ -36,7 +37,7 @@ public class PlayerController : MonoBehaviour {
 	
 	void Update ()
     {
-        float move = Input.GetAxis("Horizontal");
+        move = Input.GetAxis("Horizontal");
         Vector3 v = body.velocity;
         body.velocity = new Vector2((move * speed), body.velocity.y);
         if (move > 0)
@@ -77,7 +78,11 @@ public class PlayerController : MonoBehaviour {
 
         if (Input.GetButtonDown("Fire1"))
         {
-            anim.SetTrigger("Shoot" );
+            anim.SetTrigger("Shoot");
+            GameObject bullet = Spawner.Spawn("Bullet");
+            bullet.transform.position = PlayerController.instance.transform.position;
+            bullet.GetComponent<BulletController>().Fire(transform.right);
+           
         }
 
         if (Input.GetKeyDown(KeyCode.R) && nearSign == true)
