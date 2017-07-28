@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour {
         if (instance.jumpCount <= instance.maxJumpCount && instance.jumpCount >= 0)
         {
             instance.anim.SetBool("Jump", true);
-            AudioManager.PlayEffect("Jump", 1, 1);
+            AudioManager.PlayEffect("Jump", 1, .3f);
             instance.body.AddForce(Vector2.up * instance.jumpForce, ForceMode2D.Impulse);
             instance.onGround = false;
         }
@@ -130,7 +130,7 @@ public class PlayerController : MonoBehaviour {
     IEnumerator Walk()
     {
         walksound = true;
-        AudioManager.PlayEffect("Walk", 1, 1);
+        AudioManager.PlayEffect("Walk", 1f, .25f);
         yield return new WaitForSeconds(.5f);
         walksound = false;
     }

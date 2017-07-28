@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour {
 
     public string level;
+    public bool MenuScreen = false;
 
     private void OnEnable()
     {
@@ -22,6 +23,10 @@ public class MenuController : MonoBehaviour {
             if (Input.GetButton("Fire1"))
             {
                 SceneManager.LoadScene(level);
+            }
+            if (Input.GetButton("Fire2") && MenuScreen == true)
+            {
+                Application.Quit();
             }
             yield return new WaitForEndOfFrame();
         }

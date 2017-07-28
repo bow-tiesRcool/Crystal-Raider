@@ -9,9 +9,11 @@ public class BatController : MonoBehaviour
     private Rigidbody2D body;
     public int points = 10;
     private Animator anim;
+    private BoxCollider2D collider;
 
     void Start ()
     {
+        collider = GetComponent<BoxCollider2D>();
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         StartCoroutine("EnemyMovement");
@@ -42,13 +44,14 @@ public class BatController : MonoBehaviour
     {
         if (c.gameObject.tag == "Player")
         {
-            StopCoroutine("EnemyMovement");
             StartCoroutine("Death");
         }
     }
 
     IEnumerator Death()
     {
+        collider.enabled = false;
+        StopCoroutine("EnemyMovement");
         anim.SetBool("Death", true);
         yield return new WaitForSeconds(1);
         anim.SetBool("Death", false);
@@ -59,7 +62,8 @@ public class BatController : MonoBehaviour
     {
         if (c.gameObject.tag == "Bullet")
         {
-            StopCoroutine("EnemyMovement");
+            collider.enabled = false;
+            body.velocity = Vector2.zero;
             StartCoroutine("Death");
             c.gameObject.SetActive(false);
         }
