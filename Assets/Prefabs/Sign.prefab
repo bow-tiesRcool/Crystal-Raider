@@ -51,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1841190447588624}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.782, y: -10.837, z: 0}
+  m_LocalPosition: {x: 5.791, y: -10.837, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 4699702024701602}
@@ -109,8 +109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textToDisplay:
   - Hello Player!
-  - Find all the Crystals to make the Exit open
-  - Beware of Bats!
+  - Find all the Blue Crystals to make the Exit open
+  - But don't touch the Red Crystals!
+  - And beware of Bats and Spiders!
 --- !u!212 &212676265222772082
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -143,11 +144,11 @@ SpriteRenderer:
   m_SortingLayerID: 1438734519
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b044cbb0d51650b4cb40ced7401f2e29, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 30e804b53fbebb84b90664fde15b53df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.3, y: 0.42}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0

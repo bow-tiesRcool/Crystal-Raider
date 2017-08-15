@@ -68,7 +68,7 @@ public class TextController : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) rPressed = true;
+        if (Input.GetKeyDown(KeyCode.R)|| Input.GetButtonDown("Fire3")) rPressed = true;
     }
 
     IEnumerator TypeTextCoroutine(string str)

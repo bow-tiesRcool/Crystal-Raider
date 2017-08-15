@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f29bf7cea53efe0468f63a43c4a00d50
-timeCreated: 1498792215
+guid: 5a3743f167ac35444a348796a6898cff
+timeCreated: 1502749973
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -88,6 +88,14 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -97,21 +105,21 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 20
-        height: 28
+        width: 80
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 60, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
       name: skullsmokesheet_1
       rect:
         serializedVersion: 2
-        x: 20
+        x: 60
         y: 0
         width: 20
-        height: 28
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,9 +130,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 40
-        y: 1
+        y: 0
         width: 20
-        height: 27
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +142,10 @@ TextureImporter:
       name: skullsmokesheet_3
       rect:
         serializedVersion: 2
-        x: 60
-        y: 3
+        x: 100
+        y: 0
         width: 20
-        height: 27
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +155,10 @@ TextureImporter:
       name: skullsmokesheet_4
       rect:
         serializedVersion: 2
-        x: 81
-        y: 10
-        width: 19
-        height: 20
+        x: 20
+        y: 0
+        width: 20
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +168,10 @@ TextureImporter:
       name: skullsmokesheet_5
       rect:
         serializedVersion: 2
-        x: 102
-        y: 7
-        width: 15
-        height: 20
+        x: 80
+        y: 1
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

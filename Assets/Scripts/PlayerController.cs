@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("Walk", false);
             anim.SetFloat("Speed", 0);
         }
-        if (Input.GetButtonDown("Jump") && instance.jumpCount <= instance.maxJumpCount)
+        if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Fire2") && instance.jumpCount <= instance.maxJumpCount)
         {
             --jumpCount;
             JumpRoutine();
@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour {
            
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && nearSign == true)
+        if (Input.GetKeyDown(KeyCode.R)|| Input.GetButtonDown("Fire3") && nearSign == true)
         {
             Debug.Log("R was pressed");
             TextController.instance.Write();

@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     {
         Cursor.visible = false;
         livesUI.text = "Lives: " + lives;
-        CrystalsLeft.text = "Crystals Left: " + crystals;
+        CrystalsLeft.text = "Crystals Left: " + instance.crystals;
         //scoreUI.text = "Score: " + score;
         //instance.highScoreUI.text = "HighScore: " + PlayerPrefs.GetInt("highScore");
         yield return new WaitForEndOfFrame();
