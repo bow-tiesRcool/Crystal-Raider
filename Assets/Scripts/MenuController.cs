@@ -16,7 +16,7 @@ public class MenuController : MonoBehaviour {
     IEnumerator NextLevel()
     {
         Debug.Log(name);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         while (enabled)
         {
             Cursor.visible = false;
